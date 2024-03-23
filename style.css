@@ -1,0 +1,174 @@
+/* style.css - Styling for prjProcess
+    Class: CSC 235 Server Side Development
+    Week 4: prjProcess
+    Student Name: Brittany Schaefer
+    Written: 4/6/22
+    Revised: 4/28/22
+*/
+/*****************************************
+* Body styling used across all pages
+*****************************************/
+body{
+    background-color: rgb(148, 112, 66);
+}
+/********** Header styling **************/
+#finalHeader{
+    margin-bottom: 2em;
+}
+/*Logo*/
+#headLogo h1{
+    text-align: center;
+    font-size: 5em;
+}
+/*Nav*/
+#headNav{
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+#headNav a {
+    color: black;
+    margin: .8em;
+    background-color: white;
+    padding: .4em;
+    text-decoration: none;
+}
+
+/*****************************************
+* Page specific styling
+*****************************************/
+/******** dbfCreate.php styling *********/
+
+/******** edit.php styling *********/
+#editPage h1{
+    font-size: 2.5em;
+}
+#frmMenu{
+    margin-left: 25%;
+    width: 50%;
+    font-size: larger;
+}
+#frmMenu legend{
+    font-weight: bold;
+}
+.topLabel{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .3em;
+}
+.topLabel label{
+    width: 40%;
+    padding: .1em;
+}
+.topLabel input{
+    width: 55%;
+}
+select{
+    padding: .2em;
+    border-radius: 0;
+    width: 56%;
+}
+#radioBox{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    margin-top: 1em;
+    font-size: small;
+    padding: .5em;
+}
+#display{
+    border-top: 5px solid black;
+    margin-top: 5em;
+    padding-top: 2em;
+}
+#display table{
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+}
+#display th{
+    color: rgb(239, 235, 235);
+    background-color: rgb(115, 4, 4);
+    font-size: large;
+    font-weight: bolder;
+    border: 2px solid black;
+    padding: .4em;
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+tr:nth-child(odd) {
+    background-color: rgb(189, 180, 180);
+}
+#display td{
+    border: 2px solid black;
+    padding: .4em;
+    
+}
+
+/******** index.php styling *********/
+h1{
+    font-size: 4em;
+    text-align: center;
+}
+#displayMenu{
+    margin-left: 3%;
+    margin-right: 3%;
+    display: grid;
+    grid-template-columns: 45% auto 45%;
+    grid-template-areas: 
+        "one empty two" ;
+}
+#displayMenu h1{
+    font-size: 2.5em;
+    text-align: start;
+    border-bottom: 2px solid rgb(115, 4, 4);
+    padding-bottom: .2em;
+    padding-left: .2em;
+}
+#columnOne{
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#columnTwo{
+    grid-area: two;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.itemDisplay{
+    padding-left: 4%;
+    padding-right: 4%;
+    display: grid;
+    grid-template-columns: 62% 30%;
+    grid-template-rows: 2.5em auto;
+    grid-template-areas: 
+        "name price"
+        "description price";
+    
+}
+.itemDisplay h2{
+    font-size: 1.5em;
+}
+.nameDisplay{
+    grid-area: name;
+    padding-left: .4em;
+}
+.descDisplay{
+    grid-area: description;
+    padding-left: .6em;
+    font-size: 1.1em;
+}
+.priceDisplay{
+    grid-area: price;
+    text-align: right;
+    padding: 10%;
+}
+/******** presentation.php styling *********/
+
+/******** proofOfConcept.php styling *********/
